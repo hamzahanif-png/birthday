@@ -1,48 +1,68 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Happy Birthday</title>
-    <style>
-        body {
-            background-color: #ffdeeb;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            font-family: Arial, sans-serif;
-            overflow: hidden;
-        }
-        .card {
-            background: white;
-            padding: 40px;
-            border-radius: 15px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-            text-align: center;
-            animation: pop 1s ease-in-out;
-        }
-        h1 {
-            color: #ff4b72;
-            font-size: 3rem;
-            margin-bottom: 10px;
-        }
-        p {
-            color: #555;
-            font-size: 1.2rem;
-        }
-        @keyframes pop {
-            0% { transform: scale(0.5); opacity: 0; }
-            100% { transform: scale(1); opacity: 1; }
-        }
-    </style>
+<style>
+    body {
+        background-color: #ffdeeb;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        font-family: Arial, sans-serif;
+        overflow: hidden;
+    }
 
-</head>
-<body>
-    <div class="card">
-        <img src="hassan.jpg" alt="Hassan Bhai" class="birthday-image">
-        <h1>🎉 Happy Birthday Hassan Bhai! 🎂🎂</h1>
-        <p>Wishing you a fantastic day and a great year ahead!
-        Your Brother <h2>Hamza</h2>
-    </div>
-</body>
-</html>
+    .card {
+        background: white;
+        padding: 40px;
+        border-radius: 15px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        text-align: center;
+        animation: pop 1s ease-in-out;
+    }
+
+    .birthday-image {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 5px solid #ff4b72;
+        margin-bottom: 20px;
+    }
+
+    h1 {
+        color: #ff4b72;
+        font-size: 3rem;
+        margin-bottom: 10px;
+    }
+
+    p {
+        color: #555;
+        font-size: 1.2rem;
+    }
+
+    @keyframes pop {
+        0% {
+            transform: scale(0.5);
+            opacity: 0;
+        }
+
+        100% {
+            transform: scale(1);
+            opacity: 1;
+        }
+    }
+</style>
+
+</head> <body>
+<div class="card">
+
+    <img src="hassan.jpg" alt="Hassan Bhai" class="birthday-image">
+
+    <h1>🎉 Happy Birthday Hassan Bhai! 🎂🎂</h1>
+
+    <p>
+        Wishing you a fantastic day and a great year ahead!
+    </p>
+
+    <h2>Your Brother Hamza ❤️</h2>
+
+</div>
